@@ -1,0 +1,11 @@
+insurance_id,payer_name,plan_type,avg_copay,annual_deductible
+INS-001,Summit Health Partners,PPO,30,1500
+INS-002,Evergreen Mutual,HMO,20,1000
+INS-003,Lakeshore Care Alliance,PPO,35,2000
+INS-004,Northstar Health Plan,EPO,25,1200
+INS-005,Medicare,Government,0,240
+INS-006,Medicaid,Government,0,0
+INS-007,Prairie Blue Network,HMO,15,500
+INS-008,Heartland Select,PPO,40,3000
+INS-009,Union Trust Health,EPO,30,1800
+INS-010,Pioneer Family Care,HMO,20,750

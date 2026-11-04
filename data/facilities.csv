@@ -1,0 +1,7 @@
+facility_id,facility_name,city,state,licensed_beds
+FAC-01,Riverside Medical Center,Columbus,OH,520
+FAC-02,Lakeshore General Hospital,Cleveland,OH,410
+FAC-03,Summit Regional Hospital,Cincinnati,OH,380
+FAC-04,Prairie Community Hospital,Toledo,OH,190
+FAC-05,Harborview Specialty Clinic,Dayton,OH,120
+FAC-06,Oakridge University Hospital,Akron,OH,460

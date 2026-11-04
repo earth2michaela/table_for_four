@@ -1,0 +1,17 @@
+-- ============================================================================
+-- STARTER SNIPPET 2 of 4 : bulk load with psql \copy   (Healthcare)
+-- \copy is a psql CLIENT-side meta-command: the file path is resolved on YOUR
+-- machine, relative to the folder where you launch psql. Launch psql from the
+-- project root so 'data/...' resolves:
+--   psql -h <HOST> -U <YOUR_ROLE> -d dataeng -f starter/02_load_starter.psql
+-- The CSV files have a header row, and column order matches the files exactly.
+-- Empty (unquoted) fields in CSV format are loaded as NULL.
+-- ============================================================================
+\echo Loading staging.patients ...
+
+-- Re-runnable: empty the table first so repeated loads do not double the rows.
+TRUNCATE TABLE staging.patients;
+
+\copy staging.patients FROM 'data/patients.csv' WITH (FORMAT csv, HEADER true, NULL '')
+
+-- TODO: add a TRUNCATE + \copy pair for every other table.

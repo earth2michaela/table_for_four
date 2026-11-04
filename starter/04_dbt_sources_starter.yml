@@ -1,0 +1,23 @@
+# ============================================================================
+# STARTER SNIPPET 4 of 4 : dbt source declaration  (Healthcare)
+# Save as models/staging/_sources.yml in YOUR dbt project.
+# Declares the loaded staging table so your models can reference it with dbt's
+# source() function instead of a hard-coded table name.
+# Add one entry per table you loaded.
+# ============================================================================
+version: 2
+
+sources:
+  - name: staging
+    schema: staging            # change to your own schema if instructed
+    description: "Raw CSV loads for the Healthcare project - no transformations applied."
+    tables:
+      - name: patients
+        description: "TODO: describe what one row represents, in your own words."
+        columns:
+          - name: patient_id
+            description: "TODO"
+            data_tests:
+              - not_null
+              # - unique   # <- try enabling this. If it fails, that is information
+              #               about the source data, not a bug in your setup.

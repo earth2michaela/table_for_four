@@ -1,0 +1,39 @@
+diagnosis_code,diagnosis_description,diagnosis_category,chronic_flag
+I10,Essential (primary) hypertension,Cardiovascular,1
+I25.10,Atherosclerotic heart disease of native coronary artery,Cardiovascular,1
+I48.91,Unspecified atrial fibrillation,Cardiovascular,1
+I50.9,"Heart failure, unspecified",Cardiovascular,1
+R07.9,"Chest pain, unspecified",Symptoms,0
+R10.9,Unspecified abdominal pain,Symptoms,0
+J18.9,"Pneumonia, unspecified organism",Respiratory,0
+S93.401A,"Sprain of unspecified ligament of right ankle, initial",Injury,0
+A09,"Infectious gastroenteritis and colitis, unspecified",Infectious,0
+R55,Syncope and collapse,Symptoms,0
+C50.919,Malignant neoplasm of unspecified site of female breast,Neoplasm,1
+C34.90,Malignant neoplasm of unspecified part of bronchus or lung,Neoplasm,1
+C18.9,"Malignant neoplasm of colon, unspecified",Neoplasm,1
+C61,Malignant neoplasm of prostate,Neoplasm,1
+M17.11,"Unilateral primary osteoarthritis, right knee",Musculoskeletal,1
+S72.001A,"Fracture of unspecified part of neck of right femur, initial",Injury,0
+M54.50,"Low back pain, unspecified",Musculoskeletal,1
+M75.100,"Rotator cuff tear or rupture, not specified as traumatic",Musculoskeletal,0
+J45.909,"Unspecified asthma, uncomplicated",Respiratory,1
+H66.90,"Otitis media, unspecified",Infectious,0
+J02.9,"Acute pharyngitis, unspecified",Infectious,0
+E66.9,"Obesity, unspecified",Endocrine,1
+E11.9,Type 2 diabetes mellitus without complications,Endocrine,1
+E78.5,"Hyperlipidemia, unspecified",Endocrine,1
+N18.30,"Chronic kidney disease, stage 3 unspecified",Renal,1
+K21.9,Gastro-esophageal reflux disease without esophagitis,Digestive,1
+R91.8,Other nonspecific abnormal finding of lung field,Symptoms,0
+R93.89,Abnormal findings on diagnostic imaging of other body structures,Symptoms,0
+G43.909,"Migraine, unspecified, not intractable",Neurological,1
+G40.909,"Epilepsy, unspecified, not intractable",Neurological,1
+I63.9,"Cerebral infarction, unspecified",Neurological,0
+G20,Parkinson's disease,Neurological,1
+O80,Encounter for full-term uncomplicated delivery,Pregnancy,0
+O24.419,"Gestational diabetes mellitus in pregnancy, unspecified control",Pregnancy,0
+Z34.90,"Supervision of normal pregnancy, unspecified trimester",Pregnancy,0
+K80.20,Calculus of gallbladder without cholecystitis,Digestive,0
+K35.80,Unspecified acute appendicitis,Digestive,0
+K40.90,Unilateral inguinal hernia without obstruction,Digestive,0

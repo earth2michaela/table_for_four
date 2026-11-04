@@ -1,0 +1,31 @@
+procedure_code,procedure_description,base_cost
+PRC-1001,Echocardiogram,1850.0
+PRC-1002,Cardiac stress test,2300.0
+PRC-1003,Cardiac catheterization,9800.0
+PRC-1004,Emergency exam level 4,1200.0
+PRC-1005,IV therapy and observation,1650.0
+PRC-1006,Laceration repair,900.0
+PRC-1007,Chemotherapy infusion,6200.0
+PRC-1008,Oncology consultation,780.0
+PRC-1009,Radiation therapy session,4100.0
+PRC-1010,Knee arthroscopy,8600.0
+PRC-1011,Joint injection,640.0
+PRC-1012,Fracture fixation,14500.0
+PRC-1013,Well-child exam,310.0
+PRC-1014,Nebulizer treatment,260.0
+PRC-1015,Pediatric consultation,420.0
+PRC-1016,Comprehensive metabolic panel,220.0
+PRC-1017,Internal medicine consultation,480.0
+PRC-1018,Diabetes management visit,350.0
+PRC-1019,CT scan with contrast,2900.0
+PRC-1020,MRI scan,3600.0
+PRC-1021,Chest X-ray,340.0
+PRC-1022,EEG,1500.0
+PRC-1023,Neurology consultation,690.0
+PRC-1024,Brain MRI,3800.0
+PRC-1025,Prenatal ultrasound,520.0
+PRC-1026,Vaginal delivery,9200.0
+PRC-1027,Cesarean delivery,15800.0
+PRC-1028,Laparoscopic cholecystectomy,12900.0
+PRC-1029,Appendectomy,11800.0
+PRC-1030,Hernia repair,9400.0
