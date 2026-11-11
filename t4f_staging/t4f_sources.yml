@@ -1,0 +1,29 @@
+
+version: 2
+
+sources:
+  - name: festival
+    description: "Configuration model establishing source of truth"
+    schema: t4f
+    tables:
+      - name: appointments
+      - name: encounters
+      - name: patients
+      - name: providers
+      - name: facilities
+      - name: departments
+      - name: diagnosis_codes
+      - name: procedure_codes
+      - name: insurance_plans
+    # tables:
+    #   - name: appointment
+    #     description: "Performing band infomation"
+    #   - name: venues
+    #   - name: tickets
+    #     loaded_at_field: "created_at::timestamp"
+    #     freshness:
+    #       warn_after: {count: 24, period: hour}
+    #       error_after: {count: 48, period: hour}
+    #   - name: purchases
+    #   - name: people
+    #   - name: performances
