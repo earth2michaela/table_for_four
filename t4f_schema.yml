@@ -1,0 +1,111 @@
+version: 2
+
+models:
+  - name: dim_department
+    columns:
+      - name: department_key
+        data_tests: [unique, not_null]
+
+  - name: dim_diagnosis
+    columns:
+      - name: diagnosis_key
+        data_tests: [unique, not_null]
+
+  - name: dim_facility
+    columns:
+      - name: facility_key
+        data_tests: [unique, not_null]
+        
+  - name: dim_patient
+    columns:
+      - name: patient_key
+        data_tests: [unique, not_null]
+        
+  - name: dim_procedure
+    columns:
+      - name: procedure_key
+        data_tests: [unique, not_null]     
+
+  - name: dim_provider
+    columns:
+      - name: provider_key
+        data_tests: [unique, not_null]
+        
+  - name: dim_insurance
+    columns:
+      - name: insurance_key
+        data_tests: [unique, not_null]
+      - name: plan_type
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['PPO','HMO','EPO','Government']
+
+  - name: fact_appointment
+    columns:
+      - name: appointment_id
+        data_tests: [unique, not_null]
+        
+      - name: encounter_id
+        data_tests: [unique, not_null]
+        
+      - name: patient_key
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_patient')
+                field: patient_key
+                
+      - name: provider_key
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_provider')
+                field: provider_key
+                
+      - name: facility_key
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_facility')
+                field: facility_key
+                
+      - name: diagnosis_key
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_diagnosis')
+                field: diagnosis_key
+                
+      - name: department_key
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_department')
+                field: department_key
+                
+      - name: procedure_key
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_procedure')
+                field: procedure_key
+                
+      - name: insurance_key
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_insurance')
+                field: insurance_key
+                
+      - name: appointment_type
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['Lab Work', 'Follow-up', 'Annual Physical','Consultation','Imaging', 'Pre-op', 'Post-discharge Check']
+                
+      - name: appointment_status
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['Completed', 'No-Show', 'Cancelled']
