@@ -1,6 +1,7 @@
 -- stg_patients.sql
 
 select 
+    distinct -- remove the duplicate rows
     patient_id,
     insurance_id,
     first_name,
