@@ -1,6 +1,6 @@
 -- stg_insurance_plans.sql
 
-select 
+select distinct -- to remove the duplicate rows
     insurance_id,
     payer_name,
     plan_type,

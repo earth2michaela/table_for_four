@@ -2,8 +2,9 @@
 
 with a as (select * from {{ref('stg_appointments')}}),
     pt as (select * from {{ref('stg_patients')}}),
-    e as (select * from {{ref('stg_encounters')}}),
+    e as (select * from {{ref('stg_encounters')}})
 
+SELECT 
     a.appointment_id,
     a.encounter_id as encounter_id, -- null if never occured
     (a.encounter_id is not null) as encounter_occured, -- for quick look up
@@ -26,5 +27,5 @@ with a as (select * from {{ref('stg_appointments')}}),
     e.admit_date,
     e.discharge_date
 from a
-left join pt on pt.patient_id = a.patient_id,
+inner join pt on pt.patient_id = a.patient_id
 left join e on e.encounter_id = a.encounter_id

@@ -6,7 +6,10 @@ select
     first_name,
     last_name,
     date_of_birth,
-    gender,
+    CASE 
+        when gender ilike '%F%' then 'F'
+        else 'M'
+        END AS gender,
     zip_code,
     primary_language,
     phone,

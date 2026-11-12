@@ -10,8 +10,8 @@ select
     diagnosis_code,
     scheduled_date::date as scheduled_date,
     scheduled_time,
-    appointment_type,
-    appointment_status
+    LOWER(appointment_type) as appointment_type,
+    LOWER(appointment_status) as appointment_status
 from {{source('festival', 'appointments')}}
 
 
