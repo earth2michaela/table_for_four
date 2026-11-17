@@ -1,6 +1,5 @@
 {{ config(materialized="view") }}
-SELECT f.appointment_id, f.encounter_occured, d.diagnosis_category, d.chronic_flag, 
-    fa.facility_name, fa.city, fa.state, de.department_name 
+SELECT f.appointment_id, f.encounter_occured, d.diagnosis_category, d.chronic_flag,fa.facility_name, fa.city, fa.state, de.department_name, f.admit_date, f.scheduled_date 
 FROM  {{ref('fact_appointment')}} AS f
 LEFT JOIN {{ref('dim_diagnosis')}} AS d
 ON f.diagnosis_key = d.diagnosis_key
