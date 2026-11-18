@@ -47,19 +47,5 @@ healthcare_table_for_four/
 * **The data is realistic, not pristine.** Expect nulls, inconsistent text values, and repeated rows. Detect them with queries, decide how to handle them, and document your decisions in your report (Sections 3 and 7). Do not silently delete rows - show your evidence.
 * Some NULLs are *meaningful* (they describe a real business situation) and some are *defects*. Part of the work is telling them apart.
 
-### Quick start
-```bash
-# 1. create your GitHub repo, then copy this folder's /data and /starter into it
-# 2. from the project root:
-psql -h <HOST> -U <YOUR_ROLE> -d dataeng -f starter/01_create_staging_starter.sql
-psql -h <HOST> -U <YOUR_ROLE> -d dataeng -f starter/02_load_starter.psql
-psql -h <HOST> -U <YOUR_ROLE> -d dataeng -f starter/03_verify_starter.sql
-```
-Then extend the snippets to cover **all** files, build your own dbt models (staging -> star schema -> data products), and visualize in Superset.
-
-### Repository hygiene (from the project guide)
-* Do **not** commit passwords, tokens, or `profiles.yml`. Add them to `.gitignore`.
-* Commit the data only if your instructor allows it; otherwise document how to place it locally.
-
 ### Report checklist reminder
 Introduction + restated requirements -> source documentation (conceptual & physical ER) -> staging DDL & `\copy` script with verification -> grain/facts/dimensions + lineage diagram -> star schema evidence -> your own dbt models -> data products -> Superset dashboard + interpretation -> reflection -> repo link.
